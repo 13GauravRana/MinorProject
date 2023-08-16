@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>One4All</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    .container{
+      width: 100%;
+      height: 100%;
+      background-image:linear-gradient(rgba(250,250,250,0.5), rgba(250,250,250,0.5)),url("indexbg.JPG");
+      background-repeat:no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+    
+    .page{
+      height:500px;
+      width: 660px;
+      margin:30px;
+      background-color: #5354C4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 20px;
+  }
+    .click{
+      height:auto;
+      width:auto;
+      display:inline-block;
+      color:white;
+      text-transform: capitalize;
+      font-size: 15px;
+      font-family: 'Abel', sans-serif;
+      position: relative;
+      animation-name: click;
+      animation-duration: 0.7s;
+      animation-direction: alternate;
+      animation-timing-function:linear;
+      animation-iteration-count: infinite;
+    }
+    @keyframes click{
+      from{
+        font-size: 15px;
+      }
+      to{
+        font-size: 20px;
+      }
+    }
+    .text{
+      font-size: 80px;
+      text-decoration:none;
+      color:#000000;
+      animation-name: text;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-timing-function:ease-in;
+      animation-iteration-count: 1;
+      position:relative;
+    }
+    @keyframes text{
+      from{
+        top:-500px;
+      }
+      to{
+        top:0px;
+      }
+    }
+    a{
+      text-decoration: none;
+    }
+    hr{
+      width:100px;
+      height: 10px;
+      background-color:#000000;
+      border:none;
+    }
+    .logo{
+      background-image:url("Project_logo.png");
+      height:200px;
+      width: 200px;
+      background-size:cover;
+      animation-name: logo;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-timing-function:ease-in;
+      animation-iteration-count: 1;
+      position:relative;
+    }
+    @keyframes logo{
+      from{
+        right:900px;
+      }
+      to{
+        right:0px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="login_form.php">
+    <div class="container"> 
+      <div class="page">
+        <div class="text">One4All</div>
+        <div class="line"><hr noshade></div>
+        <div class="logo"></div>
+        <div class="click">click anywhere to continue...</div>
+      </div>
+    </div>
+  </a>
+</body>
+</html>

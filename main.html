@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>ONE FOR ALL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container{
+    height: 100%;
+    width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    background-image:linear-gradient(rgba(250,250,250,0.5), rgba(250,250,250,0.5)),url("indexbg.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .content{
+    margin:40px;
+    padding: 30px;
+    /* width:500px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5354C4;
+    /* filter: brightness(70%); */
+    overflow: hidden;
+    border-radius:30px;
+  }
+  h1{
+      font-size: 80px;
+      text-decoration:none;
+      color:#000000;
+      animation-name: text;
+      animation-duration: 1s;
+      animation-direction: alternate;
+      animation-timing-function:ease-in;
+      animation-iteration-count: 1;
+      position:relative;
+    padding-bottom: 15px;
+    }
+    @keyframes text{
+      from{
+        top:-500px;
+      }
+      to{
+        top:0px;
+      }
+    }
+  
+  button{
+    background: none;
+    color: white;
+    border: none;
+    height:70px;
+    width:200px;
+    color: black;
+    font-size: 20px;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+nav li{
+  list-style: none;
+  transform: skew(-20deg); /* SKEW */
+}
+ nav ul li:nth-of-type(odd){
+    background:linear-gradient(to right, #9796f0, #fbc7d4);
+  }
+  nav ul li:nth-of-type(even){
+    background:linear-gradient(to left, #9796f0, #fbc7d4);
+  }
+
+nav li a {
+  display: block; 
+  transform: skew(20deg); /* UNSKEW */
+}
+ li:nth-of-type(even){
+  animation-name: a;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  position:relative;
+}
+  @keyframes a{
+    from{
+        right:-500px;
+      }
+      to{
+        right:0px;
+      }
+  }
+  li:nth-of-type(odd){
+  animation-name: b;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  position:relative;
+}
+  @keyframes b{
+    from{
+        right:500px;
+      }
+      to{
+        right:0px;
+      }
+  }
+</style>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>One4All</h1>
+      <nav>
+        <ul>    
+      <li><a href="calculator.html">
+        <button>CALCULATOR</button></a></li>
+      
+      <li><a href="liveclock.html">       
+        <button>CLOCK</button></a></li>
+      
+	     <li><a href="calender.html">        
+         <button>CALENDER</button></a></li>
+        
+	     <!-- <li><a href="note.html">             
+         <button>NOTES</button></a></li> -->
+        
+	     <li><a href="expenses.html">         
+         <button>DAY2DAY EXPENSES</button></a></li>
+          
+	     <li><a href="games.html">           
+         <button>GAMES</button></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+<!-- <div><h1>ONE FOR ALL</h1></div>
+<div>
+	<a href="html project/calculator.html"> <button>CALCULATOR<div><img src="html project/calculator.png" alt="calculator" border="0" height="120" width="130" /></div></button></a>
+	
+	<a href="html project/liveclock.html"> <button>CLOCK<div><img src="html project/clock.jpg" alt="clock" border="0" height="120" width="130" /></div></button></a>
+</div>
+<div>
+	<a href="html project/note.html"> <button>NOTES<div><img src="html project/note.png" alt="notes" border="0" height="120" width="130" /></div></button></a>
+	<a href="html project/calender.html"><button>CALENDER<div><img src="html project/calender.jpg" alt="calender" border="0" height="120" width="130" /></div></button></a>
+</div>
+<div>
+	<a href="html project/expenses.html"> <button>DAY TO DAY EXPENSES<div><img src="html project/expenses.jpg" alt="day to day expenses" border="0" height="100" width="130" /></div></button>
+	<a href="html project/games.html"> <button>GAMES<div><img src="html project/games.png" alt="games" border="0" height="110" width="120" /></div></button>
+</div> -->
+</body>
+</html>
